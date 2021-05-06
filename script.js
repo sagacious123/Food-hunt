@@ -48,9 +48,10 @@ hamburger.addEventListener("click", function () {
 
 function addBgColor(c) {
     curve.style.background = `linear-gradient(45deg, ${colors[c]}, ${colors[1]})`;
-    btn1.style.background = `linear-gradient(45deg, ${colors[c]}, ${colors[1]})`;
-    btn2.style.backgroundColor = colors[c];
-    if(window.innerWidth <= 900) {
+    btn1.style.background = `linear-gradient(90deg, ${colors[c]}, ${colors[1]})`;
+    btn2.style.background = `linear-gradient(90deg, ${colors[1]}, ${colors[c]})`;
+    textBtn.style.background = `linear-gradient(45deg, ${colors[c]}, ${colors[1]})`;
+    // if(window.innerWidth <= 900) {
         nav.style.background = `linear-gradient(-155deg, ${colors[c]}, ${colors[1]})`;
-    }
+    // }
 }

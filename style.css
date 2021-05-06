@@ -140,7 +140,8 @@ main {
     width: 1020px;
     /* width: 80vw; */
     height: 1000px;
-    background-color: #fd5533;
+    /* background-color: #fd5533; */
+    background: linear-gradient(45deg, #fd5533, rgb(214, 7, 0));
     border-radius: 50%;
     position: relative;
     /* top: -650px; */
@@ -260,6 +261,7 @@ main {
     position: absolute;
     top: 14rem;
     padding-bottom: 4rem;
+    z-index: -1;
 }
 .text {
     animation: fade-down 3s ease-out;
