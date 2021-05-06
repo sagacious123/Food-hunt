@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Hunt</title>
+    <link rel="stylesheet" href="font-awesome/font-awesome.min.css">
+    <link rel="stylesheet" href="MaterialDesign-Webfont-master/css/materialdesignicons.css">
+    <link rel="stylesheet" href="jCircle.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="navbar">
+            <a class="logo" href="#"><span class="mdi mdi-food-fork-drink mdi-24px" style="margin-right: .6rem; color: rgb(184, 184, 184);"></span>Food Hunt</a>
+            <ul>
+                <!-- <a class="logo2" href="#"><span class="mdi mdi-food-fork-drink mdi-24px" style="margin-right: .6rem; color: rgb(184, 184, 184);"></span>Food Hunt</a> -->
+                <li class="list-item"><a href="#">Breakfast</a></li>
+                <li class="list-item"><a href="#">Lunch</a></li>
+                <li class="list-item"><a href="#">Dinner</a></li>
+                <li class="list-item"><a href="#"><i class="fa fa-lock"></i></a></li>
+                <div class="glass"></div>
+                <div class="circle"></div>
+            </ul>
+            <!-- <div class="glass"></div> -->
+            <!-- Hamburger Icon -->
+            <div class="cont navbar-toggler mr-1" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <!-- End of Hamburger Icon -->
+        </header>
+        <main>
+            <section class="text-con">
+                <div class="text">
+                    <h1 class="text-h1">Delicious</h1>
+                    <h2>Quench the hunger</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed soluta, similique, nam quas, eveniet sint accusamus hic cumque officia corporis placeat. Expedita illum quibusdam soluta, sunt eum iste repudiandae quis.</p>
+                </div>
+                <button><a href="#">Quench Now</a></button>
+            </section>
+            <section class="food-con">
+                <div class="curve">
+                    <div class="plate-con">
+                      <div class="plate-con-circle" style="width:80%;margin:auto 150px;transform: rotate(-90deg);">
+                        <div id="circles-container"> 
+                                <!-- <div id="main-circle-content"></div> -->
+                                <div id="circle">
+                                  <div class="min-circle" data-inside="min-circle">
+                                    <a href="images/plate1.png">
+                                      <img src="images/plate1.png" alt="">
+                                    </a>
+                                    <!-- <div class="content-text">Caption 1</div> -->
+                                  </div>
+                                  <div class="min-circle" data-inside="min-circle">
+                                    <a href="images/plate2.png">
+                                      <img src="images/plate2.png" alt="">
+                                    </a>
+                                    <!-- <div class="content-text">Caption 2</div> -->
+                                  </div>
+                                  <div class="min-circle" data-inside="min-circle">
+                                    <a href="images/plate3.png">
+                                      <img src="images/plate3.png" alt="">
+                                    </a>
+                                    <!-- <div class="content-text">Caption 3</div> -->
+                                  </div>
+                                  <div class="min-circle" data-inside="min-circle">
+                                    <a href="images/plate4.png">
+                                      <img src="images/plate4.png" alt="">
+                                    </a>
+                                    <!-- <div class="content-text">Caption 4</div> -->
+                  
+                                  </div>
+                                  <div class="min-circle" data-inside="min-circle">
+                                    <a href="images/plate5.png">
+                                      <img src="images/plate5.png" alt="">
+                                    </a>
+                                    <!-- <div class="content-text">Caption 5</div> -->
+                                  </div>
+                                  <div class="min-circle" data-inside="min-circle">
+                                    <a href="images/plate6.png">
+                                      <img src="images/plate6.png" alt="">
+                                    </a>
+                                    <!-- <div class="content-text">Caption 6</div> -->
+                                  </div>
+                                  <div class="min-circle" data-inside="min-circle">
+                                    <a href="images/plate1.png">
+                                      <img src="images/plate1.png" alt="">
+                                    </a>
+                                    <!-- <div class="content-text">Caption 7</div> -->
+                                  </div>
+                                  <div class="min-circle" data-inside="min-circle">
+                                    <a href="images/plate2.png">
+                                      <img src="images/plate2.png" alt="">
+                                    </a>
+                                    <!-- <div class="content-text">Caption 8</div> -->
+                                  </div>
+                                  
+                                </div>
+                              </div>
+                            </div>
+                    </div>
+
+                            
+                    <!-- <div class="img-group">
+                        <img class="img img1" src="images/plate1.png" alt="">
+                        <img class="img img2" src="images/plate2.png" alt="">
+                        <img class="img img3" src="images/plate3.png" alt="">
+                        <img class="img img4" src="images/plate4.png" alt="">
+                        <img class="img img5" src="images/plate5.png" alt="">
+                    </div> -->
+                </div>
+                <div id="main-circle-content"></div>
+                <!-- <img class="img6" src="" alt=""> -->
+                <div>
+                    <button id="btn1" class="btn btn1"><i class="fa fa-arrow-down"></i></button>
+                    <button id="btn2" class="btn btn2"><i class="fa fa-arrow-down"></i></button>
+                </div>
+                <!-- <button class="new-button">New Button</button> -->
+            </section>
+            <!-- <img src="images/IMG-20210324-WA0000.jpg" alt=""> -->
+        </main>
+    </div>
+    <!-- <img src="images/IMG-20210324-WA0000.jpg" style="width: 100%;" alt=""> -->
+
+    <script src="jCircle.js"></script>
+    <script src="script.js"></script>
+    <script>
+      var circle=new jCircle({
+    'container': 'circles-container',
+    'circle': 'circle',
+    'mainContent':'main-circle-content',
+    'animateCircles':true,
+    'speed':3,
+    'mainViewStyle':'normal',
+    'minCirclesEffectOver':'pulse',
+    'contentType':'images',
+    'stopOnOverMain':false,
+    'mainContentOverAction':'normal'
+    // 'btnLeft': 'btn1',
+    // 'btnRight': 'btn2'
+  });
+  circle.create();
+  
+  // var textCircle=new jCircle({
+  //   'container': 'circles-container-text',
+  //   'circle': 'circle-text',
+  //   'mainContent':'main-circle-content-text',
+  //   'animateCircles':true,
+  //   'speed':3,
+  //   'mainViewStyle':'normal',
+  //   'minCirclesEffectOver':'rotate',
+  //   'contentType':'text',
+  //   'stopOnOverMain':true
+  // });
+  // textCircle.create();
+    </script>
+</body>
+</html>
